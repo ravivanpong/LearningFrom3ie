@@ -1,5 +1,12 @@
+# Unzipped data
+data/*.json
+data/*.csv
+
 # Idea generation notebooks
 local_notebooks
+
+# VS Code setting
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
