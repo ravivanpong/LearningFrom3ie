@@ -25,10 +25,6 @@ import aiohttp
 import logging
 import os
 
-## Save log to file.
-file_name = os.path.splitext(os.path.basename(__file__))[0]
-logging.basicConfig(filename=f'{file_name}_log.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-
 
 ## Global variables and settings
 ##====================================================================================
@@ -348,7 +344,7 @@ def drop_duplicates(collection, by) -> None:
     else:
         print("No duplicates found.")
 
-def scrape_meta_data(collection: object, url: str, json_query: dict =None, update: bool =True) -> None:
+def scrape_meta_data(collection: object, url: str, json_query: dict = None, update: bool = True) -> None:
     """
     Scrape the meta data of the evidences. If update == True, then scrape only the reports published from the
     most recent year-of-publication in the specified collection.
